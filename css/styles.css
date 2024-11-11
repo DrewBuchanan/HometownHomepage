@@ -11,6 +11,7 @@ DARK BLUE: #1D3557
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -42,7 +43,6 @@ body {
 
 #heroSubheading {
     width: 356px;
-    height: 39px;
     text-align: center;
     margin: 6px auto 0px auto;
     color: #F1FAEE;
@@ -91,4 +91,56 @@ h3 {
 .activityImg {
     width: 100px;
     border-radius: 50px;
+}
+
+#guidesContainer {
+    display:flex;
+    justify-content: center;
+    width: 750px;
+    margin: 12px auto 0px auto;
+}
+
+.guide {
+    display:flex;
+    flex-direction: row-reverse;
+    width: 400px;
+    height: 294px;
+    margin: auto 12px 50px 12px;
+    background-color: #A8DADC;
+    border-color:#1D3557;
+    border-style: solid;
+    border-width: 0px 0px 6px 0px;
+    border-radius: 10px;
+}
+
+.guideTextContainer {
+    width: 50%;
+    margin: 49px 13px 0px 13px;
+}
+
+.guideHeading {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1D3557;
+}
+
+.guideQuote {
+    font-size: 16px;
+    font-style: italic;
+    color: #1D3557;
+    margin-top: 28px;
+}
+
+.guideCitation {
+    color: #1D3557;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.guideImg {
+    height: 248px;
+    width: 180px;
+    border-radius: 10px;
+    margin-left: 13px;
+    margin-top: 23px;
 }

@@ -17,6 +17,7 @@ DARK BLUE: #1D3557
 body {
     margin: 0;
     text-align: center;
+    background-color: #F1FAEE;
 }
 
 #hero {
@@ -143,4 +144,5 @@ h3 {
     border-radius: 10px;
     margin-left: 13px;
     margin-top: 23px;
+    border: 2px solid #1D3557;
 }

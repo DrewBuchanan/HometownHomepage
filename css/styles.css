@@ -94,7 +94,7 @@ h3 {
     border-radius: 50px;
 }
 
-#guide {
+.guide {
     display:flex;
     flex-direction: row-reverse;
     width: 400px;
@@ -107,30 +107,30 @@ h3 {
     border-radius: 10px;
 }
 
-#guideTextContainer {
+.guideTextContainer {
     width: 50%;
     margin: 49px 13px 0px 13px;
 }
 
-#guideHeading {
+.guideHeading {
     font-weight: bold;
     font-size: 24px;
 }
 
-#guideQuote {
+.guideQuote {
     font-size: 16px;
     font-style: italic;
     color: #1D3557;
     margin-top: 28px;
 }
 
-#guideCitation {
+.guideCitation {
     color: #1D3557;
     font-weight: bold;
     margin-top: 28px;
 }
 
-#guideImg {
+.guideImg {
     height: 248px;
     width: 180px;
     border-radius: 10px;

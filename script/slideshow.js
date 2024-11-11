@@ -1,5 +1,7 @@
 let slideIndex = 1;
 showSlides(slideIndex);
+document.getElementById("prev").addEventListener('click', function() { plusSlides(-1) });
+document.getElementById("next").addEventListener('click', function() { plusSlides(1) });
 
 // Next/previous controls
 function plusSlides(n) {

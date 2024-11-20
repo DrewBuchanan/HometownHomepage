@@ -5,6 +5,7 @@
     ---white: #FCFDFC;
     ---englishviolet: #513B56;
     ---darkspringgreen: #39704E;
+    ---lightergreen: #11E864;
 }
 
 /* Top level elements */
@@ -17,7 +18,7 @@
 body {
     margin: 0;
     text-align: center;
-    background-color: #FCFDFC;
+    background-color: var(---white);
     background: rgb(82, 81, 116);
     background: linear-gradient(180deg, rgba(82, 81, 116, 1) 0%, rgba(81, 59, 86, 1) 100%);
 }
@@ -26,8 +27,8 @@ body {
 .sectionheader {
     font-size: 24px;
     font-weight: bold;
-    color: #39704E;
-    margin-top: 39px;
+    color: var(---lightergreen);
+    margin: 39px 0 20px;
 }
 
 /* Hero section */
@@ -38,9 +39,9 @@ body {
 }
 
 #heroHeading {
-    background-color: #39704E;
+    background-color: var(---darkspringgreen);
     border-radius: 10px;
-    color: #FCFDFC;
+    color: var(---white);
     font-size: 32px;
     font-weight: bold;
     margin: 0px auto 0px auto;
@@ -50,9 +51,9 @@ body {
 }
 
 #heroSubheading {
-    background-color: #525174;
+    background-color: var(---ultraviolet);
     border-radius: 10px;
-    color: #FCFDFC;
+    color: var(---white);
     font-size: 18px;
     font-weight: bold;
     margin: 6px auto 0px auto;
@@ -71,7 +72,7 @@ body {
 }
 
 .activityHeader {
-    color: #39704E;
+    color: var(---lightergreen);
     font-size: 16px;
     font-weight: bold;
     margin-top: 16px;
@@ -79,7 +80,7 @@ body {
 }
 
 .activityText {
-    color: #BCD6C5;
+    color: var(---ashgray);
     font-size: 16px;
     margin-top: 5px;
     width: 183px;
@@ -100,7 +101,7 @@ body {
 }
 
 .guide {
-    background-color: #525174;
+    background-color: var(---ultraviolet);
     border: 0px 0px 6px 0px solid #513B56;
     border-radius: 10px;
     display: flex;
@@ -116,20 +117,20 @@ body {
 }
 
 .guideQuote {
-    color: #FCFDFC;
+    color: var(---white);
     font-size: 16px;
     font-style: italic;
     margin-top: 28px;
 }
 
 .guideCitation {
-    color: #FCFDFC;
+    color: var(---white);
     font-weight: bold;
     margin-top: 28px;
 }
 
 .guideImg {
-    border: 2px solid #513B56;
+    border: 2px solid var(---englishviolet);
     border-radius: 10px;
     height: auto;
     margin-left: 13px;

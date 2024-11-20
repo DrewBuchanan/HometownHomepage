@@ -1,108 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hometown Homepage Project</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/slideshow.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <!--Goals I use:
-        1. Classes
-        2. Flexbox
-        3. Background-image property
-        4. The color palette provided
-        -->
-        <!--Stretch goals
-        1. Use content for my own hometown - Complete
-        2. Use a different color palette - Complete
-        3. Add an appropriate Google font - Complete
-        4. Find a way to use :hover - Complete (ish, the slideshow used it)
-        5. Add another section - Added the slideshow
-        -->
-        
-        <!-- HERO SECTION -->
-        <div id="hero">
-            <h1 id="heroHeading">Visit Eagan, Minnesota!</h1>
-            <h2 id="heroSubheading">Visit the home of the Minnesota Vikings and BlueCross/BlueShield of Minnesota!</h2>
-        </div>
-        
-        <!-- ACTIVITIES SECTION -->
-        <div id="activities">
-            <h3 class="sectionheader">Top three activities to do in Eagan</h3>
-            <div id="activitiesContainer">
-                <div class="activity">
-                    <img class="activityImg" src="img/theatre.jpg">
-                    <h4 class="activityHeader">See the latest films!</h4>
-                    <p class="activityText">Emagine Eagan has all of the latest films and classic favorites. There's even axe throwing while you wait!</p>
-                </div>
-                <div class="activity">
-                    <img class="activityImg" src="img/park.jpg">
-                    <h4 class="activityHeader">Go for a walk at the local park!</h4>
-                    <p class="activityText">Lebanon Hills Regional Park is the perfect place for a picnic, going for a nice long walk, or just touching grass.</p>
-                </div>
-                <div class="activity">
-                    <img class="activityImg" src="img/sports.jpg">
-                    <h4 class="activityHeader">Visit Vikings Training Camp!</h4>
-                    <p class="activityText">Come watch the Vikings train to do battle against their sworn nemeses: The Green Bay Packers!</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- SLIDESHOW SECTION -->
-        <div id="slideshow">
-            <h3 class="sectionheader">Explore the sites of Eagan!</h3>
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/slideshow/1.jpg" class="slideshowimg">
-                <div class="text">Enjoy the finest in fashion at Eagan's Outlet Mall!</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/slideshow/2.jpg" class="slideshowimg">
-                <div class="text">Come make a splash at Cascade Bay!</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/slideshow/3.jpg" class="slideshowimg">
-                <div class="text">Come see beautiful art amongst nature at Caponi Art Park!</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a id="prev">&#10094;</a>
-            <a id="next">&#10095;</a>
-        </div>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <script type="module" src="script/slideshow.js"></script>
-
-        <!-- GUIDE SECTION -->
-        <div id="guides">
-            <h4 class="sectionheader">Your guides</h4>
-            <div id="guidesContainer">
-                <div class="guide">
-                    <div class="guideTextContainer">
-                        <p class="guideQuote">"I lived in Eagan for over 28 years, so I can show you all of its best parts and hidden secrets!"</p>
-                        <h4 class="guideCitation">Drew Buchanan</h4>
+    <body class="colors">
+        <article>
+            <!--Goals I use:
+            1. Classes
+            2. Flexbox
+            3. Background-image property
+            4. The color palette provided
+            -->
+            <!--Stretch goals
+            1. Use content for my own hometown - Complete
+            2. Use a different color palette - Complete
+            3. Add an appropriate Google font - Complete
+            4. Find a way to use :hover - Complete (ish, the slideshow used it)
+            5. Add another section - Added the slideshow
+            -->
+            
+            <!-- HERO SECTION -->
+            <header id="hero">
+                <h1 id="heroHeading">Visit Eagan, Minnesota!</h1>
+                <h2 id="heroSubheading">Visit the home of the Minnesota Vikings and BlueCross/BlueShield of Minnesota!</h2>
+            </header>
+            
+            <!-- ACTIVITIES SECTION -->
+            <section id="activities">
+                <h3 class="sectionheader">Top three activities to do in Eagan</h3>
+                <div id="activitiesContainer">
+                    <div class="activity">
+                        <img class="activityImg" src="img/theatre.jpg">
+                        <h4 class="activityHeader">See the latest films!</h4>
+                        <p class="activityText">Emagine Eagan has all of the latest films and classic favorites. There's even axe throwing while you wait!</p>
                     </div>
-                    <img class="guideImg" src="img/drew.jpg">
-                </div>
-                <div class="guide">
-                    <div class="guideTextContainer">
-                        <p class="guideQuote">"I too have lived in Eagan for over 28 years, and there aren't even bad parts for me to show you!"</p>
-                        <h4 class="guideCitation">Evil Drew Buchanan</h4>
+                    <div class="activity">
+                        <img class="activityImg" src="img/park.jpg">
+                        <h4 class="activityHeader">Go for a walk at the local park!</h4>
+                        <p class="activityText">Lebanon Hills Regional Park is the perfect place for a picnic, going for a nice long walk, or just touching grass.</p>
                     </div>
-                    <img class="guideImg" src="img/evildrew.jpg">
+                    <div class="activity">
+                        <img class="activityImg" src="img/sports.jpg">
+                        <h4 class="activityHeader">Visit Vikings Training Camp!</h4>
+                        <p class="activityText">Come watch the Vikings train to do battle against their sworn nemeses: The Green Bay Packers!</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+
+            <!-- SLIDESHOW SECTION -->
+            <section id="slideshow">
+                <h3 class="sectionheader">Explore the sites of Eagan!</h3>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/slideshow/1.jpg" class="slideshowimg">
+                    <div class="text">Enjoy the finest in fashion at Eagan's Outlet Mall!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/slideshow/2.jpg" class="slideshowimg">
+                    <div class="text">Come make a splash at Cascade Bay!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/slideshow/3.jpg" class="slideshowimg">
+                    <div class="text">Come see beautiful art amongst nature at Caponi Art Park!</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a id="prev">&#10094;</a>
+                <a id="next">&#10095;</a>
+            </section>
+
+            <!-- The dots/circles -->
+            <section style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </section>
+            <script type="module" src="script/slideshow.js"></script>
+
+            <!-- GUIDE SECTION -->
+            <section id="guides">
+                <h4 class="sectionheader">Your guides</h4>
+                <div id="guidesContainer">
+                    <div class="guide">
+                        <div class="guideTextContainer">
+                            <p class="guideQuote">"I lived in Eagan for over 28 years, so I can show you all of its best parts and hidden secrets!"</p>
+                            <h4 class="guideCitation">Drew Buchanan</h4>
+                        </div>
+                        <img class="guideImg" src="img/drew.jpg">
+                    </div>
+                    <div class="guide">
+                        <div class="guideTextContainer">
+                            <p class="guideQuote">"I too have lived in Eagan for over 28 years, and there aren't even bad parts for me to show you!"</p>
+                            <h4 class="guideCitation">Evil Drew Buchanan</h4>
+                        </div>
+                        <img class="guideImg" src="img/evildrew.jpg">
+                    </div>
+                </div>
+            </section>
+        </article>
     </body>
 </html>

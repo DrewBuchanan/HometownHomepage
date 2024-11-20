@@ -7,10 +7,11 @@
     ---darkspringgreen: #39704E;
 }
 
+/* Top level elements */
 * {
+    font-family: "Lato", "Happy Monkey", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Lato", "Happy Monkey", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -21,38 +22,7 @@ body {
     background: linear-gradient(180deg, rgba(82, 81, 116, 1) 0%, rgba(81, 59, 86, 1) 100%);
 }
 
-/* Header */
-#hero {
-    background: #525174 url(../img/eagan.jpg) no-repeat center;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-#heroHeading {
-    width: 201px;
-    text-align: center;
-    margin: 0px auto 0px auto;
-    color: #FCFDFC;
-    background-color: #39704E;
-    border-radius: 10px;
-    padding: 6px 12px 6px 12px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-#heroSubheading {
-    width: 356px;
-    text-align: center;
-    margin: 6px auto 0px auto;
-    color: #FCFDFC;
-    background-color: #525174;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 4px 28px 2px 28px;
-}
-
+/* Cross section elements */
 .sectionheader {
     font-size: 24px;
     font-weight: bold;
@@ -60,42 +30,73 @@ body {
     margin-top: 39px;
 }
 
+/* Hero section */
+#hero {
+    background: #525174 url(../img/eagan.jpg) no-repeat center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+#heroHeading {
+    background-color: #39704E;
+    border-radius: 10px;
+    color: #FCFDFC;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px auto 0px auto;
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+    width: 201px;
+}
+
+#heroSubheading {
+    background-color: #525174;
+    border-radius: 10px;
+    color: #FCFDFC;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 6px auto 0px auto;
+    padding: 4px 28px 2px 28px;
+    text-align: center;
+    width: 356px;
+}
+
+/* Activities section  */
 #activitiesContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 64px;
-    width: 720px;
     margin: 56px auto 0px auto;
+    width: 720px;
 }
 
 .activityHeader {
-    margin-top: 16px;
+    color: #39704E;
     font-size: 16px;
     font-weight: bold;
-    color: #39704E;
+    margin-top: 16px;
     width: 183px;
 }
 
 .activityText {
+    color: #BCD6C5;
+    font-size: 16px;
     margin-top: 5px;
     width: 183px;
-    font-size: 16px;
-    color: #BCD6C5;
 }
 
 .activityImg {
-    width: 100px;
+    border-radius: 50%;
     height: 100px;
-    border-radius: 50px;
+    width: 100px;
 }
 
 /* Guide section */
 #guidesContainer {
     display: flex;
     justify-content: center;
-    width: 750px;
     margin: 12px auto 0px auto;
+    width: 750px;
 }
 
 .guide {
@@ -110,8 +111,8 @@ body {
 }
 
 .guideTextContainer {
-    width: 50%;
     margin: 49px 13px 0px 13px;
+    width: 50%;
 }
 
 .guideQuote {
@@ -128,13 +129,13 @@ body {
 }
 
 .guideImg {
-    object-fit: cover;
-    max-height: 248px;
-    max-width: 180px;
-    width: auto;
-    height: auto;
+    border: 2px solid #513B56;
     border-radius: 10px;
+    height: auto;
     margin-left: 13px;
     margin-top: 23px;
-    border: 2px solid #513B56;
+    max-height: 248px;
+    max-width: 180px;
+    object-fit: cover;
+    width: auto;
 }

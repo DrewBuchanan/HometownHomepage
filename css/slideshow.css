@@ -28,9 +28,9 @@
 
 .slideshowimg {
     object-fit: cover;
-    max-width: 800px;
+    max-width: 600px;
     width: auto;
-    height: 600px;
+    height: 400px;
 }
 
 /* Position the "next button" to the right */
